@@ -27,7 +27,7 @@ module SlackRubyBotServer
                   optional :domain, type: String
                 end
                 optional :actions, type: Array do
-                  requires :value, type: String
+                  optional :value, type: String
                 end
                 optional :message, type: Hash do
                   requires :type, type: String
